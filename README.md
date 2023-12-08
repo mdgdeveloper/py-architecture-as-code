@@ -11,3 +11,17 @@
 # Description
 
 Archiecture as code is a project that aims to create a tool that can generate a diagram of a deployment from YAML code using Python and Graphviz.
+
+
+
+# Required information
+
+## Diagram information
+[Diagram Info](https://diagrams.mingrammer.com/docs/nodes/azure)
+
+# Usage 
+
+```sh
+docker run -it --rm -v "$PWD:/app" architecture_as_code \
+    python main.py --provider aws --region us-east-1 --resources ec2,rds --template custom.dot
+```
